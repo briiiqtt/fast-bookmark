@@ -1,14 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Fast Bookmark",
-  "version": "0.1",
+  "version": "0.2",
   "description": "press Ctrl + d to add bookmark Fast",
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "src/popup/index.html",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
@@ -24,7 +24,7 @@
   },
   "permissions": ["activeTab", "bookmarks"],
   "commands": {
-    "add-bookmark": {
+    "add_bookmark": {
       "suggested_key": {
         "default": "Ctrl+D"
       },

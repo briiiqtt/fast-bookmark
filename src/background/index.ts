@@ -1,6 +1,5 @@
 chrome.commands.onCommand.addListener(async (command) => {
-  console.log(command);
-  if (command === 'add-bookmark') {
+  if (command === 'add_bookmark') {
     try {
       const [tab] = await chrome.tabs.query({
         active: true,
